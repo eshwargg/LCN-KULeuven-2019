@@ -1,5 +1,6 @@
 
-
+% First Script at GitHub
+%testing
 input = 's04_anatomical_iso.img';
 [pathstr,fname,ext] = fileparts(input);
 if strcmp(pathstr,'')
