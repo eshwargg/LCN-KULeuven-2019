@@ -1,12 +1,14 @@
 
 % First Script at GitHub
 %testing
+a=5;
+c=2;
 input = 's04_anatomical_iso.img';
 [pathstr,fname,ext] = fileparts(input);
 if strcmp(pathstr,'')
    pathstr = pwd; 
    
-   a+b=1;
+   b=a+c;
 end
 
 output = strcat(fname,'.nii');
@@ -14,6 +16,7 @@ V=spm_vol(input);
 ima=spm_read_vols(V);
 V.fname=output;
 
+disp('hello world');
 % save 
 currentFolder = pwd;
 cd(pathstr);
