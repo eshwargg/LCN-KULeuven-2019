@@ -5,6 +5,8 @@ input = 's04_anatomical_iso.img';
 [pathstr,fname,ext] = fileparts(input);
 if strcmp(pathstr,'')
    pathstr = pwd; 
+   
+   a+b=1;
 end
 
 output = strcat(fname,'.nii');
